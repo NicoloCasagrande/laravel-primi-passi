@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>{{$title}}</h1>
+    <h3>{{$name}}</h3>
+    <ul>
+        @foreach($students as $student)
+        <li>{{$student}}</li>
+        @endforeach
+    </ul>
 </body>
 </html>
