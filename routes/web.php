@@ -26,3 +26,11 @@ Route::get('/', function () {
 
     return view('homepage', $data);
 });
+
+Route::get('/about', function () {
+    $data = [
+        "title" => "Chi Siamo", 
+    ];
+
+    return view('about', $data);
+});
